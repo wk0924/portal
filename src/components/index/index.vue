@@ -21,8 +21,7 @@
           </div>
         </draggable>
         <!-- 组件 -->
-        <draggable
-          class="componentsBox"
+        <draggable class="componentsBox"
           :group="{name:'components',put:false}"
           v-model="components"
           :options="dragOption1"
