@@ -11,13 +11,7 @@
     <el-row class="rowBox">
       <el-col :span="3" class="rowBoxLeft">
         <!-- 布局 -->
-        <draggable
-          class="layoutBox"
-          :group="{name:'layout',put:false}"
-          v-model="layout"
-          :options="dragOption1"
-          @end="endLayout"
-        >
+        <draggable class="layoutBox" :group="{name:'layout',put:false}" v-model="layout" :options="dragOption1" @end="endLayout">
           <div class="columns" v-for="(item,index) in layout" :key="index">
             <div
               class="column"
